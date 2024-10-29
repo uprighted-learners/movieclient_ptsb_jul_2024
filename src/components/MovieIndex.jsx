@@ -10,11 +10,6 @@ const MovieIndex = ({token}) => {
   const fetchMovies = async () => {
     const url = APIURL + "/movie/all"
 
-    // const headers = new Headers()
-
-    // headers.append("Authorization", `Bearer ${token}`)
-    // headers.append("Authorization", `Bearer ${localStorage.getItem("token")}`)
-
     const response = await fetch(url, {
       headers: {
         "Authorization": `Bearer ${token}`
